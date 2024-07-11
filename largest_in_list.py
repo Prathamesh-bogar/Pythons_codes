@@ -8,8 +8,7 @@ def find_largest(lst):
     return largest
 
 list = input("Enter the numbers separated by comma\n")
-new_list = list.split(", ")
-new_list = [int(i) for i in new_list]
+new_list = [int(i) for i in list.split(", ")]
 result = find_largest(new_list)
 print(f"The largest element is {result}")
 

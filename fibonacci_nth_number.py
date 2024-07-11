@@ -11,8 +11,7 @@ def fibonacci(num):
     else:
         for i in range(1, num+1):
             c = a + b
-            a = b
-            b = c
+            a, b = b, c
         return b
     
 n = int(input("Enter a number to get the fibonacci series term\n"))
